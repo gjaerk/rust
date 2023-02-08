@@ -1,8 +1,4 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
- cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-  est laborum.
+This is a Rust program that implements a simplified version of the Unix grep tool. It uses the Clap library to parse command line arguments, the Regex library to handle regular expressions, and the standard library's I/O functions to handle reading from files and standard input.
+
+The process_lines function takes a reader (either from a file or from standard input) and a regular expression, and for each line it finds a match in the line, it prints the line. The main function sets up the command line arguments using Clap, compiles the regular expression from the pattern argument, and determines whether the input is from a file or from standard input. If it's from a file, it opens the file, creates a reader from the file, and passes the reader and the compiled regular expression to process_lines. If the input is from standard input, it creates a reader from standard input and passes that to process_lines.
   
